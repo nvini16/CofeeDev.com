@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CofeeDev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="caixa-video">
+        <video src="https://pixabay.com/videos/download/video-31672_tiny.mp4" loop muted autoplay></video>
+        <div class="mascara"></div>
+    </div>
+
+    <header class="header">
+        <section>
+            <a href="#"><img src="" alt="logo"></a>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#" onclick="abrirModal()">Endereço</a>
+            </nav>
+        </section>
+    </header>
+
+    <section class="caixa-principal">
+        <div>
+            <h3>Code do CofeeDev</h3>
+            <p>Texto de exemplo para o seu site de café.</p>
+            <a class="btn-link" href="#">Garanta o seu!</a>
+        </div>
+    </section>
+
+    <section class="sobre">
+        <h2 class="titulo"><span>Sobre</span> Nós</h2>
+        <div class="container">
+            <div class="sobre-img">
+                <img src="" alt="cafe">
+            </div>
+            <div class="sobre-texto">
+                <h3>Por que a gente?</h3>
+                <p>Texto descritivo sobre a empresa.</p>
+                <a class="btn-link" href="#">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal">
+        <h3 class="titulo"><span>Nosso</span> Endereço</h3>
+        <p>Rua do Café, 123 - Dev City</p>
+        <button class="btn-link" onclick="esconderModal()">Fechar</button>
+    </div>
+
+    <div class="mascara2" onclick="esconderModal()"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
